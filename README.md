@@ -12,13 +12,11 @@ You can train your own Reinforced Agent and then deploy-it online and oppose him
 Train your modal :
 ```sh
 git clone https://github.com/raysr/Arcane-Chess
-cd Arcane-Chess/app
 python3.6 learning/train.py
 ```
 
 Then deploy the local server :
 ```sh
-cd Arcane-Chess/app
 python3.6 main.py
 ```
 
@@ -35,7 +33,7 @@ pip3 install tensorflow keras flask numpy python-chess
 ```
 Then you can execute the train script with optional parameters :
 ```sh
-python3.6 learning/train.py --number_of_games 100000 --winner_reward 1 --loser_malus -1 --epsilon 1
+python3.6 train.py --number_of_games 100000 --winner_reward 1 --loser_malus -1 --epsilon 1
                           --decremental_epsilon 0.0001 --gamma 0.05
 ```
 Each of those ones are explained in the Approach section of this README.
